@@ -1,3 +1,609 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
 
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.logos12 img {
+  margin: 20px 0 0 20px;
+  width: 100px;
+  display: none;
+}
+
+.navs {
+  height: 100px;
+  width: 100%;
+  display: none;
+  background: white !important;
+  align-items: center;
+}
+
+.logo,
+.navs ul li {
+  color: #E31E24;
+  display: none;
+}
+
+.navs ul li a {
+  font-size: 18px;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+nav #icon {
+  color: #E31E24;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+.section .sec-left {
+  width: 20%;
+  padding: 20px 30px;
+}
+.section .sec-left .logotip {
+  margin-bottom: 30px;
+}
+.section .sec-left h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.section .sec-left h2:hover {
+  color: #E31E24;
+}
+.section .sec-left h3 {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 20px 0 20px 0;
+}
+.section .sec-left .prod {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.section .sec-left .prod p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 5px 0 0 0;
+  width: 90%;
+}
+.section .sec-left h4 {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: underline;
+  margin: 10px 0;
+  color: #E31E24;
+}
+.section .sec-right {
+  width: 80%;
+}
+.section .sec-right .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.section .sec-right .navbar .navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.section .sec-right .navbar .navbar-left h3 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.section .sec-right .navbar .navbar-left h3:hover {
+  color: #E31E24;
+}
+.section .sec-right .navbar .navbar-right h3 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.section .sec-right .navbar .navbar-right h3:hover {
+  color: #E31E24;
+}
+.section .sec-right .comp {
+  padding: 60px;
+  position: relative;
+}
+.section .sec-right .comp::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid red;
+  height: 100px;
+  left: 0px;
+  top: 70px;
+}
+.section .sec-right .comp h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .comp p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+.section .sec-right .comp .comp-bot {
+  display: flex;
+  justify-content: space-between;
+}
+.section .sec-right .comp .comp-bot .item1 {
+  border-right: 1px solid gray;
+  width: 25%;
+}
+.section .sec-right .comp .comp-bot .item1:last-child {
+  border: none;
+}
+.section .sec-right .comp .comp-bot .item1 h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  color: #E31E24;
+}
+.section .sec-right .comp .comp-bot .item1 h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+.section .sec-right .box1 {
+  padding: 60px;
+  position: relative;
+}
+.section .sec-right .box1::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid #5B5B5B;
+  height: 100px;
+  left: 0px;
+  top: 70px;
+}
+.section .sec-right .box1 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box1 h3 {
+  margin: 15px 0 15px 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.section .sec-right .box1 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 100px 0 30px;
+}
+.section .sec-right .box2 {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section .sec-right .box2 .box2-left img {
+  position: relative;
+  z-index: 99;
+}
+.section .sec-right .box2 .box2-left .box2-text {
+  position: relative;
+  padding: 0 90px 0 30px;
+}
+.section .sec-right .box2 .box2-left .box2-text::before {
+  position: absolute;
+  content: url(/assets/media/123\ \(1\).png);
+  left: 10px;
+  top: -20px;
+}
+.section .sec-right .box2 .box2-left .box2-text h1 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+.section .sec-right .box2 .box2-left .box2-text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.section .sec-right .box2 .box2-right img {
+  position: relative;
+  z-index: 99;
+}
+.section .sec-right .box2 .box2-right .box2-text2 {
+  position: relative;
+  padding: 0 90px 0 30px;
+}
+.section .sec-right .box2 .box2-right .box2-text2::before {
+  position: absolute;
+  content: url(/assets/media/123\ \(2\).png);
+  left: 10px;
+  top: 0px;
+}
+.section .sec-right .box2 .box2-right .box2-text2 h1 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+}
+.section .sec-right .box2 .box2-right .box2-text2 p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.section .sec-right .box3 {
+  padding: 60px;
+  position: relative;
+}
+.section .sec-right .box3::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid red;
+  height: 100px;
+  left: 0px;
+  top: 70px;
+}
+.section .sec-right .box3 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box3 .title {
+  display: flex;
+  gap: 30px;
+}
+.section .sec-right .box3 .title h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+.section .sec-right .box3 .title h2:hover {
+  border-bottom: 2px solid #E31E24;
+}
+.section .sec-right .box3 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+.section .sec-right .box3 .comp-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.section .sec-right .box3 .comp-bot .card {
+  width: 30%;
+}
+.section .sec-right .box3 .comp-bot .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.section .sec-right .box4 {
+  padding: 0 60px 60px 60px;
+  position: relative;
+}
+.section .sec-right .box4::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid #5B5B5B;
+  height: 100px;
+  left: 0px;
+  top: 10px;
+}
+.section .sec-right .box4 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box4 .item {
+  display: flex;
+  justify-content: space-between;
+}
+.section .sec-right .box4 .item .cards {
+  width: 30%;
+  border: 1px solid gray;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section .sec-right .box4 .item .cards .img-hover {
+  display: none;
+}
+.section .sec-right .box4 .item .cards p {
+  font-weight: 700;
+  font-size: 20px;
+  color: #E31E24;
+}
+.section .sec-right .box4 .item .cards p span {
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+}
+.section .sec-right .box4 .item .cards:hover {
+  background-color: #E31E24;
+}
+.section .sec-right .box4 .item .cards:hover p {
+  color: white;
+}
+.section .sec-right .box4 .item .cards:hover p span {
+  color: white;
+}
+.section .sec-right .box4 .item .cards:hover .img2-hover {
+  display: none;
+}
+.section .sec-right .box4 .item .cards:hover .img-hover {
+  display: inline;
+}
+.section .sec-right .box5 {
+  padding: 0 60px 60px 60px;
+  position: relative;
+}
+.section .sec-right .box5::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid #E31E24;
+  height: 100px;
+  left: 0px;
+  top: 10px;
+}
+.section .sec-right .box5 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box5 iframe {
+  height: 400px;
+}
+.section .sec-right .box5 .box5-bot {
+  text-align: center;
+}
+.section .sec-right .box5 .box5-bot button {
+  background-color: transparent;
+  padding: 5px 50px;
+  border: 1px solid gray;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+.section .sec-right .box5 .box5-bot button:hover {
+  border: 1px solid #E31E24;
+  color: #E31E24;
+}
+.section .sec-right .box6 {
+  padding: 0 60px 60px 60px;
+}
+.section .sec-right .box6 h1 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0;
+}
+.section .sec-right .box6 .title {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.section .sec-right .box6 .title h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+.section .sec-right .box6 .title h2:hover {
+  border-bottom: 2px solid #E31E24;
+}
+.section .sec-right .box6 .item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.section .sec-right .box6 .item .item-left {
+  width: 30%;
+}
+.section .sec-right .box6 .item .item-left h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.section .sec-right .box6 .item .item-left .dr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+.section .sec-right .box6 .item .item-left .dr p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+}
+.section .sec-right .box6 .item .item-left .dr:hover {
+  color: #E31E24;
+  border-bottom: 1px solid #E31E24;
+}
+.section .sec-right .box6 .item .item-left button {
+  color: white;
+  background-color: #E31E24;
+  border: 1px solid #E31E24;
+  padding: 5px 0;
+  width: 100%;
+  margin-top: 50px;
+}
+.section .sec-right .box6 .item .item-left button:hover {
+  color: #E31E24;
+  background-color: white;
+}
+.section .sec-right .box8 {
+  padding: 60px;
+  position: relative;
+}
+.section .sec-right .box8::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid red;
+  height: 100px;
+  left: 0px;
+  top: 70px;
+}
+.section .sec-right .box8 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box8 .title {
+  display: flex;
+  gap: 30px;
+}
+.section .sec-right .box8 .title h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+.section .sec-right .box8 .title h2:hover {
+  border-bottom: 2px solid #E31E24;
+}
+.section .sec-right .box8 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+}
+.section .sec-right .box8 .comp-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.section .sec-right .box8 .comp-bot .card {
+  width: 30%;
+}
+.section .sec-right .box9 {
+  padding: 60px;
+  position: relative;
+}
+.section .sec-right .box9::before {
+  content: "";
+  position: absolute;
+  border-left: 25px solid red;
+  height: 100px;
+  left: 0px;
+  top: 70px;
+}
+.section .sec-right .box9 h1 {
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+.section .sec-right .box9 .comp-bot {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.section .sec-right .box9 .comp-bot .card {
+  border: none;
+}
+.section .sec-right .box10 {
+  padding: 0 60px 60px 60px;
+}
+.section .sec-right .box10 h1 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: -10px;
+  margin-left: 30px;
+  position: relative;
+  width: fit-content;
+  padding: 0 10px;
+  z-index: 88;
+  background-color: white;
+}
+.section .sec-right .box10 .borders {
+  border: 1px solid gray;
+  padding: 50px 20px 20px 20px;
+}
+.section .sec-right .box10 .borders:hover {
+  border: 1px solid #E31E24;
+}
+.section .sec-right .box10 .borders form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .sec-right .box10 .borders form div {
+  width: 30%;
+}
+.section .sec-right .box10 .borders form div input {
+  width: 100%;
+  padding: 5px 10px;
+}
+.section .sec-right .box10 .borders form button {
+  width: 30%;
+  padding: 8px 10px;
+  background-color: #E31E24;
+  color: white;
+  border: 1px solid #E31E24;
+  height: fit-content;
+  margin-top: 20px;
+}
+.section .sec-right .box10 .borders form button:hover {
+  color: #E31E24;
+  background-color: white;
+}
+.section .sec-right .box10 .borders p {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 10px 0 0 0;
+}
+.section .sec-right .box11 iframe {
+  height: 500px;
+}
+.section .sec-right .box11 h2 {
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 30px;
+}
+.section .sec-right .box11 p {
+  margin-left: 30px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  width: 50%;
+}
 
 /*# sourceMappingURL=style.css.map */
